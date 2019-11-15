@@ -6,7 +6,7 @@ import $ from 'jquery';
 
 $(document).ready(function() {
   console.log(new Age(22));
-  var potato = new Person(20,[true,true,false]);
+  var potato = new Person(100,[true,true,true]);
   potato.setExpectancy();
   console.log(potato);
 });
