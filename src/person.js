@@ -6,7 +6,6 @@ export default class Person {
     this.lifeExpectancy,
     this.health = health,
     this.toLive;
-
   } // constructor(age, health)
   setExpectancy() {
     let expectancy = 50;
