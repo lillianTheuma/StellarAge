@@ -1,3 +1,12 @@
-body {
-  background-color: #7FDBFF;
+#enterAgeCard {
+  width: 200px;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+#enterAge {
+  text-align: center;
+}
+#inputAgeButton {
+  margin-top: 10px;
 }

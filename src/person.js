@@ -2,7 +2,7 @@ import Age from './age.js';
 
 export default class Person {
   constructor(age, health) {
-    this.age = age,
+    this.age = new Age(age),
     this.lifeExpectancy,
     this.health = health,
     this.toLive;
@@ -18,6 +18,6 @@ export default class Person {
       }
     }); // this.health.forEach(function(healthThing))
     this.lifeExpectancy = new Age(expectancy);
-    this.toLive = new Age(this.lifeExpectancy.earthAge - this.age);
+    this.toLive = new Age(this.lifeExpectancy.earthAge - this.age.earthAge);
   } // setExpectancy()
 } // export default class Person
