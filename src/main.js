@@ -15,16 +15,14 @@ $(document).ready(function() {
 
     $("#enterAge").toggle();
     $("#resultPage").toggle();
-    planets.forEach(function(planet) {
-      $("#"+planet+"Age").html(parseInt(user.age.mercuryAge));
-      $("#"+planet+"Life").html(parseInt(user.lifeExpectancy.mercuryAge));
-      $("#"+planet+"Remaining").html(parseInt(user.toLive.mercuryAge));
+    planets.forEach(function(planet, i) {
+      const ages = [user.age.mercuryAge, user.age.venusAge, user.age.marsAge, user.age.jupiterAge];
+      const expect = [user.lifeExpectancy.mercuryAge, user.lifeExpectancy.venusAge, user.lifeExpectancy.marsAge, user.lifeExpectancy.jupiterAge];
+      const remaining = [user.toLive.mercuryAge, user.toLive.venusAge, user.toLive.marsAge, user.toLive.jupiterAge];
+
+      $("#"+planet+"Age").html(parseInt(ages[i]));
+      $("#"+planet+"Life").html(parseInt(expect[i]));
+      $("#"+planet+"Remaining").html(parseInt(remaining[i]));
     });
-
   });
-
-  // console.log(new Age(22));
-  // var potato = new Person(100,[true,true,true]);
-  // potato.setExpectancy();
-  // console.log(potato);
 }); // $(document).ready(function() {})

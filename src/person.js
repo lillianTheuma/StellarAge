@@ -17,6 +17,6 @@ export default class Person {
       }
     }); // this.health.forEach(function(healthThing))
     this.lifeExpectancy = new Age(expectancy);
-    this.toLive = new Age(this.age.earthAge - this.lifeExpectancy.earthAge);
+    this.toLive = new Age( this.lifeExpectancy.earthAge - this.age.earthAge);
   } // setExpectancy()
 } // export default class Person
