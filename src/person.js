@@ -4,9 +4,10 @@ export default class Person {
   constructor(age, health) {
     this.age = age,
     this.lifeExpectancy,
-    this.health = health;
+    this.health = health,
+    this.toLive;
 
-  }
+  } // constructor(age, health)
   setExpectancy() {
     let expectancy = 50;
     this.health.forEach(function(healthThing) {
@@ -15,7 +16,8 @@ export default class Person {
       } else {
         expectancy -= 5;
       }
-    });
+    }); // this.health.forEach(function(healthThing))
     this.lifeExpectancy = new Age(expectancy);
-  }
-}
+    this.toLive = new Age(this.lifeExpectancy.earthAge - this.age);
+  } // setExpectancy()
+} // export default class Person

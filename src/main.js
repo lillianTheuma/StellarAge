@@ -9,4 +9,4 @@ $(document).ready(function() {
   var potato = new Person(100,[true,true,true]);
   potato.setExpectancy();
   console.log(potato);
-});
+}); // $(document).ready(function() {})
