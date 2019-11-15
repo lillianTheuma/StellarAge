@@ -4,6 +4,6 @@ export default class Age {
     this.mercuryAge = (age * 0.24),
     this.venusAge = (age * 0.62),
     this.marsAge = (age * 1.88),
-    this.jupiterAge = (age * 11.86)
+    this.jupiterAge = (age * 11.86);
   }
 }
