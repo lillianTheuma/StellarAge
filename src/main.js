@@ -1,4 +1,3 @@
-
 import Person from './person.js';
 import './styles.css';
 import $ from 'jquery';
@@ -11,6 +10,8 @@ $(document).ready(function() {
     const age = $("#ageSection").val();
     let user = new Person(age, []);
     console.log(user);
+    $("#enterAge").toggle();
+    $("#resultPage").toggle();
   })
 
   // console.log(new Age(22));
