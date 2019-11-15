@@ -17,3 +17,11 @@
 > [X] Jupiter / Earth == 11.86
 
 Outputs follow the aforementioned ratios
+
+#### User receives data in terms of life expectancy
+
+> [ ] Stores info on user regarding age, health, life expectency
+
+> [ ] Is able to create a new Age object for the users life expectency
+
+> [ ] Compares user age with user life expectancy
