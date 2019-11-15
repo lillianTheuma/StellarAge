@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 $(document).ready(function() {
   $("#ageForm").submit(function(event) {
-    const planets = [mercury, venus, mars, jupiter];
+    const planets = ["mercury", "venus", "mars", "jupiter"];
 
     event.preventDefault();
     const age = $("#ageSection").val();
@@ -15,11 +15,11 @@ $(document).ready(function() {
 
     $("#enterAge").toggle();
     $("#resultPage").toggle();
-
-    $("#mercuryAge").html(parseInt(user.age.mercuryAge));
-    $("#mercuryLife").html(parseInt(user.lifeExpectancy.mercuryAge));
-    $("#mercuryRemaining").html(parseInt(user.toLive.mercuryAge));
-
+    planets.forEach(function(planet) {
+      $("#"+planet+"Age").html(parseInt(user.age.mercuryAge));
+      $("#"+planet+"Life").html(parseInt(user.lifeExpectancy.mercuryAge));
+      $("#"+planet+"Remaining").html(parseInt(user.toLive.mercuryAge));
+    });
 
   });
 

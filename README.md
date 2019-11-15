@@ -24,4 +24,4 @@ Outputs follow the aforementioned ratios
 
 > [X] Is able to create a new Age object for the users life expectancy
 
-> [ ] Compares user age with user life expectancy
+> [X] Compares user age with user life expectancy
