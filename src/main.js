@@ -12,6 +12,10 @@ $(document).ready(function() {
     console.log(user);
     $("#enterAge").toggle();
     $("#resultPage").toggle();
+
+    $("$mercuryAge").text(parseInt(user.age.mercuryAge));
+    $("$mercuryLife").text(parseInt(user.lifeExpectancy.mercuryAge));
+    $("$mercuryRemaining").text(parseInt(user.toLive.mercuryAge));
   })
 
   // console.log(new Age(22));
