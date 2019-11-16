@@ -13,6 +13,8 @@ $(document).ready(function() {
     let user = new Person(age, []);
     user.setExpectancy();
 
+    $("#resetButton").disabled = false;
+    $("#resetButton").toggleClass("disabled");
     $("#enterAge").toggle();
     $("#resultPage").toggle();
     planets.forEach(function(planet, i) {
@@ -24,5 +26,11 @@ $(document).ready(function() {
       $("#"+planet+"Life").html(parseInt(expect[i]));
       $("#"+planet+"Remaining").html(parseInt(remaining[i]));
     });
+  });
+  $("#resetButton").click(function() {
+    $("#enterAge").toggle();
+    $("#resultPage").toggle();
+    $("#resetButton").disabled = true;
+    $("#resetButton").toggleClass("disabled");
   });
 }); // $(document).ready(function() {})
