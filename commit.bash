@@ -1,3 +1,3 @@
 git add .
 git commit -m "$1"
-git push lt master
+git push origin master
