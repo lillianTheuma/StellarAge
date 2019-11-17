@@ -1,7 +1,7 @@
 ### Super Galactic Age Calculator
 
-# PizzaOrder - Lillian Theuma
-This portfolio is presented as a solution to the project guidelines described in 
+# StellarAge - Lillian Theuma
+This portfolio is presented as a solution to the project guidelines described in
 
 # TABLE OF CONTENTS
 ```
@@ -28,25 +28,31 @@ OR
 AND
 * Internet connection
 
+* Node Project Manager
+
 ## Setup with GIT
 * Open terminal, and navigate to a directory of your choice, then use the following command to clone files to local machine.
 
 ```
-git clone https://github.com/lillianTheuma/PizzaOrder
+git clone https://github.com/lillianTheuma/StellarAge
 ```
 
 ## Setup without GIT
-* Navigate to https://github.com/lillianTheuma/PizzaOrder on a web browser
+* Navigate to https://github.com/lillianTheuma/StellarAge on a web browser
 * Find the bottom labeled "clone or download", and click it to open a drop-down menu
 * Click Download Now on the drop-down menu
 * Extract contents of .zip folder into directory of your choice
 
 # Usage
-If using on a local machine, open (./PizzaOrder/index.html)
-OR
-If using on an FTP, direct users to (./PizzaOrder/index.html)
+Clone the repository from github
 
-Navigate between project files with the drop-down menu on the upper navbar. Each project is labeled according to their week.
+Install dependencies with the following command
+> npm Install
+
+Build the project to be hosted locally
+>npm run start
+
+Open the project by directing the web browser to localhost:8080 (127.0.0.1 port 8080)
 
 # Documentation
 ## Specs
