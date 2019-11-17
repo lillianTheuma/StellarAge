@@ -54,6 +54,10 @@ Build the project to be hosted locally
 
 Open the project by directing the web browser to localhost:8080 (127.0.0.1 port 8080)
 
+Test the Javascript if you'd like with the command
+>npm test
+
+
 # Documentation
 ## Specs
 
