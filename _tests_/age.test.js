@@ -10,5 +10,5 @@ describe('Age', () => {
   test('Confirms constructor built the age correctly', () => {
     expect(reuseableAge.earthAge).toEqual(100);
     expect(reuseableAge.venusAge).toEqual(100/.62);
-  })
+  });
 })
